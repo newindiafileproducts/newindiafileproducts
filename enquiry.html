@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enquire | New India File Products</title>
+  <link rel="icon" href="assets/homechanging/10.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="enquiry.html">Enquire</a>
+    </div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search" id="searchInput" />
+      <button id="searchBtn">🔍</button>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <main class="form-section">
+    <h1>Product Enquiry</h1>
+    <form id="enquiry-form">
+      <input type="text" name="product" placeholder="Product Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
+
+    <div class="call-us">
+      <p>Or</p>
+      <a href="tel:+919212411137" class="call-button">📞 Call Us</a>
+    </div>
+  </main>
+
+  <footer class="bottom-navbar" id="bottomBar">
+    <div class="bottom-right">
+      <p><strong>Contact us</strong></p>
+      <p>newindiafile2689@gmail.com</p>
+      <p>+91 9212411137</p>
+      <p>2689, Roshan Pura, Nai Sarak, Delhi-110006</p>
+    </div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
