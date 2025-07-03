@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products | New India File Products</title>
+  <title>Enquire | New India File Products</title>
   <link rel="icon" href="assets/homechanging/10.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top Navbar -->
   <nav class="navbar">
     <div class="nav-left">
       <img src="assets/logo.png" alt="Logo" class="logo" />
@@ -17,45 +16,36 @@
       <a href="enquiry.html">Enquire</a>
     </div>
     <div class="nav-right">
-      <input type="text" placeholder="Search products..." class="search" id="searchInput" />
-      <button id="searchBtn" class="search-btn">🔍</button>
+      <input type="text" placeholder="Search..." class="search" id="searchInput" />
+      <button id="searchBtn">🔍</button>
       <button id="theme-toggle">🌙</button>
     </div>
   </nav>
 
+  <main class="form-section">
+    <h1>Product Enquiry</h1>
+    <form id="enquiry-form">
+      <input type="text" name="product" placeholder="Product Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
 
-  <!-- Product Cards -->
-  <section class="search-results" id="searchResults"></section>
+    <div class="call-us">
+      <p>Or</p>
+      <a href="tel:+919212411137" class="call-button">📞 Call Us</a>
+    </div>
+  </main>
 
-  <!-- Popup -->
-  <div class="product-popup" id="productPopup">
-    <button id="closePopup" class="close-btn">X</button>
-    <div class="popup-image-container">
-      <img src="" alt="Product" class="popup-img" />
-      <div class="popup-arrows">
-        <button>&larr;</button>
-        <button>&rarr;</button>
-      </div>
-    </div>
-    <div class="info">
-      <h3>Title</h3>
-      <p>Description</p>
-    </div>
-  </div>
-
-  <!-- Bottom Navbar -->
-  <div class="bottom-navbar">
-    <div class="bottom-left">
-      <!-- Buttons removed per request -->
-    </div>
+  <footer class="bottom-navbar" id="bottomBar">
     <div class="bottom-right">
-      <p>Contact us<br>
-        newindiafile2689@gmail.com<br>
-        +91 9212411137<br>
-        2689, Roshan Pura, Nai Sarak, Delhi-110006
-      </p>
+      <p><strong>Contact us</strong></p>
+      <p>newindiafile2689@gmail.com</p>
+      <p>+91 9212411137</p>
+      <p>2689, Roshan Pura, Nai Sarak, Delhi-110006</p>
     </div>
-  </div>
+  </footer>
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>

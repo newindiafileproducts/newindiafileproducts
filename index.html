@@ -4,8 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | New India File Products</title>
-  <link rel="icon" href="assets/homechanging/10.png" type="image/png">
+  <link rel="icon" href="assets/homechanging/10.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .headline {
+      text-align: center;
+    }
+
+    .notice {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      max-width: 100%;
+      color: var(--text-light);
+    }
+
+    [data-theme="dark"] .notice {
+      color: var(--text-dark);
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -14,9 +31,7 @@
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="enquiry.html">Enquire</a>
-      <span style="margin-left: 30px;">👈 Click For Price and Ordering, or Call Us at : +91 9212411137</span>
-      
-      
+      <div class="notice">👈 Click For Price and Ordering, or Call Us at : +91 9212411137</div>
     </div>
     <div class="nav-right">
       <input type="text" placeholder="Search..." class="search" id="searchInput" />
@@ -25,14 +40,7 @@
     </div>
   </nav>
 
-<style>
-    .headline {
-        text-align: center;
-    }
-</style>
-
-<h1 class="headline">New India File Products</h1>
-
+  <h1 class="headline">New India File Products</h1>
 
   <section class="hero">
     <div class="carousel">
@@ -55,7 +63,6 @@
       <img src="assets/homechanging/16.png" class="carousel-img" />
       <img src="assets/homechanging/17.png" class="carousel-img" />
       <img src="assets/homechanging/18.png" class="carousel-img" />
-
     </div>
   </section>
 
@@ -83,6 +90,7 @@
       <p style="margin-right: 30px;">2689, Roshan Pura, Nai Sarak, Delhi-110006</p>
     </div>
   </footer>
+
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>

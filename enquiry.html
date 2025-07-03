@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Top Navbar -->
   <nav class="navbar">
     <div class="nav-left">
       <img src="assets/logo.png" alt="Logo" class="logo" />
@@ -22,9 +23,10 @@
     </div>
   </nav>
 
+  <!-- Enquiry Form -->
   <main class="form-section">
     <h1>Product Enquiry</h1>
-    <form id="enquiry-form">
+    <form id="enquiry-form" novalidate>
       <input type="text" name="product" placeholder="Product Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required />
@@ -38,6 +40,7 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="bottom-navbar" id="bottomBar">
     <div class="bottom-right">
       <p><strong>Contact us</strong></p>
@@ -46,6 +49,7 @@
       <p>2689, Roshan Pura, Nai Sarak, Delhi-110006</p>
     </div>
   </footer>
+
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
